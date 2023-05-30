@@ -4,5 +4,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.getData),
-    # path('task/', views.postData),
+    path('task/', views.postData),
 ]

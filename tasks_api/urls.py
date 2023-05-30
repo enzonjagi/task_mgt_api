@@ -1,8 +1,8 @@
 from django.urls import path
-from . import views
+from .views import TaskListApiView
 from django.conf import settings
 
 urlpatterns = [
-    path('', views.getData),
-    path('task/', views.postData),
+    path('', TaskListApiView.as_view()),
+    # path('api/<int:task_id>'),
 ]
